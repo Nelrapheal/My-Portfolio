@@ -44,7 +44,7 @@ header {
 }
 
 .nel{
-    margin-left: 10px;
+    margin-left: 7px;
     color: white;
     font-family: arial;
 }
@@ -73,7 +73,7 @@ nav{
 nav a{
     color: white;
     text-decoration: none;
-    margin: 0 15px;
+    margin: 0 10px;
     font-size: 14px;
     opacity: 0.6;
 }
@@ -115,13 +115,17 @@ main h1{
 .pro{
     background:linear-gradient(135deg, #00f0ff, #7a5cff);
     border: none;
-    padding: 12px 25px;
+    padding: 10px 20px;
     border-radius: 10px;
     font-weight: bold;
 }
 
+.btn a{
+  text-decoration: none;
+}
+
 .cm{
-    padding: 12px 25px;
+    padding: 10px 20px;
     border: none;
     border-radius: 10px;
     background: rgb(255, 255, 255, 0.1);
@@ -359,7 +363,7 @@ progress::-moz-progress-bar {
 }
 
 .ft{
-  width: 400px;
+  width: 300px;
   border: 1px solid #00f0ff;
   margin-left: 20px;
   padding: 20px;
@@ -388,5 +392,5 @@ progress::-moz-progress-bar {
   text-align: center;
   border-top: 1px solid #00f0ff;
   margin-top: 50px;
-  margin-bottom: 20px;
+  padding-bottom: 10px;
 }

@@ -1,13 +1,13 @@
 import { useEffect, useRef } from "react";
+import { motion } from "framer-motion";
 import Nav from "./Header.jsx";
 import Main1 from "./Input.jsx";
 import About from "./About.jsx";
-import "./App.css";
 import Project from "./Project.jsx";
 import Skills from "./Skills.jsx";
 import Get from "./Get.jsx";
 import Footer from "./Footer.jsx";
-
+import "./App.css";
 
 function App() {
   const canvasRef = useRef(null);
@@ -89,26 +89,64 @@ function App() {
     loop();
 
     return () => {
-      // cleanup on unmount
       window.removeEventListener("resize", reset);
       wrap.removeChild(cv);
     };
   }, []);
 
-  return(
+  return (
     <>
-    <div ref={canvasRef} style={{ position: "fixed", inset: 0, zIndex: -1 }}></div>
-    <Nav />
-    <Main1 />
-    <About />
-    <Project />
-    <Skills />
-    <Get />
-    <Footer />
+      <div ref={canvasRef} style={{ position: "fixed", inset: 0, zIndex: -1 }}></div>
+      <Nav />
+
+      <motion.div
+  initial={{ opacity: 0, y: 80 }}
+  animate={{ opacity: 1, y: 0 }}
+  transition={{ duration: 1.8, ease: "easeInOut" }}
+>
+  <Main1 />
+</motion.div>
+
+<motion.div
+  initial={{ opacity: 0, y: 70 }}
+  whileInView={{ opacity: 1, y: 0 }}
+  transition={{ duration: 1.5, ease: "easeInOut" }}
+  viewport={{ once: true }}
+>
+  <About />
+</motion.div>
+
+<motion.div
+  initial={{ opacity: 0, scale: 0.9 }}
+  whileInView={{ opacity: 1, scale: 1 }}
+  transition={{ duration: 1.6, ease: "easeInOut" }}
+  viewport={{ once: true }}
+>
+  <Project />
+</motion.div>
+
+<motion.div
+  initial={{ opacity: 0, x: -60 }}
+  whileInView={{ opacity: 1, x: 0 }}
+  transition={{ duration: 1.7, ease: "easeInOut" }}
+  viewport={{ once: true }}
+>
+  <Skills />
+</motion.div>
+
+<motion.div
+  initial={{ opacity: 0, y: 80 }}
+  whileInView={{ opacity: 1, y: 0 }}
+  transition={{ duration: 1.8, ease: "easeInOut" }}
+  viewport={{ once: true }}
+>
+  <Get />
+</motion.div>
+
+
+      <Footer />
     </>
-    
-  ) 
+  );
 }
 
 export default App;
-

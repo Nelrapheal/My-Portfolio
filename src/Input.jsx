@@ -48,10 +48,10 @@ function Main1() {
             — clean, responsive and futuristic.
           </div>
           <div className="btn" style={{ marginTop: "1.5rem" }}>
-            <button className="pro" style={{ marginRight: "1.7rem" }}>
+            <a href="#project" className="pro" style={{ marginRight: "1.7rem" }}>
               Explore Projects 🚀
-            </button>
-            <button className="cm">Contact Me 💬</button>
+            </a>
+            <a href="#contact" className="cm">Contact Me 💬</a>
           </div>
         </div>
       </section>
