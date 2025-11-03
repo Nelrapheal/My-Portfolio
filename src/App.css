@@ -1,0 +1,32 @@
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+}
+body {
+  margin: 0;
+  font-family: Orbitron;
+  background: radial-gradient(
+      1200px 600px at 10% 10%,
+      rgba(7, 16, 33, 0.6),
+      transparent 5%
+    ),
+    linear-gradient(180deg, #071021 0%, #04060a 100%);
+  color: #e6f0ff;
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  padding: 0px;
+}
+
+#particle-canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  overflow: hidden;
+}

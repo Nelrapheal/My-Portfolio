@@ -1,0 +1,392 @@
+html {
+  scroll-behavior: smooth;
+}
+
+header{
+    display: flex;
+}
+
+header {
+  position: fixed;
+  top: 16px;
+  left: 0;
+  right: 0;
+  margin: 0 5px;
+  padding: 8px 20px;
+
+  background: rgba(20, 20, 20, 0.35);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+
+  border-radius: 15px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  isolation: isolate;
+  z-index: 9999;
+}
+
+
+.logo{
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.n{
+    height: 44px;
+    width: 44px;
+    background:linear-gradient(135deg, #00f0ff, #7a5cff);
+    margin: 5px;
+    border-radius: 10px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.nel{
+    margin-left: 10px;
+    color: white;
+    font-family: arial;
+}
+
+.nelson{
+    font-weight: bold;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    font-size: 16px;
+}
+
+.fd{
+    font-size: 12px;
+    margin-top: 0;
+    padding-top: 0;
+    opacity: 0.5;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+nav a{
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 14px;
+    opacity: 0.6;
+}
+
+nav a:hover{
+    opacity: 1;
+    color: #00f0ff;
+    transition: opacity 0.5s;
+}
+
+main{
+    margin-top: 90px;
+    padding: 20px;
+    text-align: center;
+}
+
+main h1{
+    font-size: 45px;  
+    font-family: Orbitron;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.typing{
+    opacity: 1;
+    font-weight: bold;
+    color: #00f0ff;
+    font-size: 20px;
+}
+
+.sub{
+  margin-top: 30px;
+}
+
+.btn{
+    margin-top: 40px;
+}
+
+.pro{
+    background:linear-gradient(135deg, #00f0ff, #7a5cff);
+    border: none;
+    padding: 12px 25px;
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+.cm{
+    padding: 12px 25px;
+    border: none;
+    border-radius: 10px;
+    background: rgb(255, 255, 255, 0.1);
+    backdrop-filter: blur(1px);
+    color: #00f0ff;
+    box-shadow: 0 0 20px white;
+}
+
+.sec1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 95px;
+}
+
+.text{
+    width: 600px;
+}
+
+.about{
+  margin: 20px;
+  margin-bottom: 50px;
+}
+
+.me{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.me h3{
+  font-size: 18px;
+}
+
+.me p{
+  font-size: 14px;
+  opacity: 0.6;
+  font-family: arial;
+}
+
+.img{
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  display: block;
+  margin: 0 auto;
+  object-fit: cover;
+  box-shadow: 0 0 20px #00f0ff;
+  margin-top: 300px;
+  margin-bottom: 30px;
+}
+
+.bio{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  width: 100%;
+  gap: 20px;
+}
+
+@media (max-width: 650px) {
+  .bio {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+.bio span{
+  font-family: arial;
+  margin-left: 10px;
+  margin-right: 20px;
+}
+
+.bio div{
+  border: 1px solid #00f0ff;
+  padding: 10px;
+  border-radius: 16px;
+  background: rgb(255, 255, 255, 0.1);
+  backdrop-filter: blur(2px);
+  box-shadow: 0 0 10px white, inset 0 0 5px white;
+}
+
+.bio div:hover{
+  transform: translateY(-6px);
+
+}
+
+.bio p{
+  font-family: arial;
+  font-size: 15px;
+  border: 1px solid #00f0ff;
+  border-radius: 20px;
+  padding: 20px;
+  background: rgb(255, 255, 255, 0.1);
+  backdrop-filter: blur(2px);
+
+  box-shadow: 0 0 10px white, inset 0 0 5px white;
+}
+
+progress {
+  width: 200px;
+  height: 10px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+/* For WebKit browsers (Chrome, Edge, Safari) */
+progress::-webkit-progress-bar {
+  background-color: #eee; /* bar background */
+  border-radius: 10px;
+}
+
+progress::-webkit-progress-value {
+  background: linear-gradient(90deg, #00f0ff, #7a5fff); /* your color */
+  border-radius: 10px;
+}
+
+/* For Firefox */
+progress::-moz-progress-bar {
+  background: linear-gradient(90deg, #00f0ff, #7a5fff);
+  border-radius: 10px;
+}
+
+.whole{
+  margin-left: 20px;
+}
+
+.proj{
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.proj h3{
+  font-size: 17px;
+}
+
+.proj p{
+  font-size: 14px;
+  opacity: 0.6;
+  font-family: arial;
+
+}
+
+.projects {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  width: 100%;
+  max-width: 1200px;
+}
+
+.d {
+  padding: 10px;
+  border: 1px solid #00f0ff;
+  border-radius: 16px;
+  text-align: start;
+  background: rgb(255, 255, 255, 0.1);
+  backdrop-filter: blur(2px);
+}
+
+.whole img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 15px;
+  box-shadow: 0 0 20px #00f0ff;
+}
+.d h4 {
+  margin-top: 10px;
+  font-size: 18px;
+}
+
+.d:hover{
+  box-shadow: 0 0 20px #00f0ff, inset 0 0 10px #00f0ff;
+  transform: translateY(-7px);
+}
+
+.proj1{
+
+  margin-top: 30px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.proj1 h3{
+  font-size: 17px;
+}
+
+.proj1 p{
+  font-size: 14px;
+  opacity: 0.6;
+  font-family: arial;
+}
+
+.projects p{
+  font-family: arial;
+}
+
+.projects a{
+  text-decoration: none;
+  color: blue;
+  font-weight: bold;
+}
+
+.p{
+  margin-left: 20px;  
+}
+
+.to{
+  display: flex;
+}
+
+.to div{
+  border: 1px solid #00f0ff;
+  margin-right: 10px;
+  padding: 20px;
+  border-radius: 20px;
+  width: 400px;
+  background: rgb(255, 255, 255, 0.1);
+  backdrop-filter: blur(2px);
+  margin-bottom: 50px;
+}
+
+.to div p{
+  font-family: arial;
+}
+
+.to div:hover{
+  box-shadow: 0 0 20px #00f0ff, inset 0 0 10px #00f0ff;
+  transform: translateY(-7px);
+}
+
+.ft{
+  width: 400px;
+  border: 1px solid #00f0ff;
+  margin-left: 20px;
+  padding: 20px;
+  border-radius: 20px;
+  background: rgb(255, 255, 255, 0.1);
+  backdrop-filter: blur(2px);
+}
+
+.ft a{
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.ft p{
+  font-family: arial;
+  font-weight: bold;
+}
+
+.ft:hover{
+  box-shadow: 0 0 20px #00f0ff, inset 0 0 10px #00f0ff;
+  transform: translateY(-7px);
+}
+
+.footer{
+  font-family: arial;
+  text-align: center;
+  border-top: 1px solid #00f0ff;
+  margin-top: 50px;
+  margin-bottom: 20px;
+}
