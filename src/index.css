@@ -395,3 +395,10 @@ progress::-moz-progress-bar {
   margin-top: 50px;
   padding-bottom: 10px;
 }
+
+@media (max-width: 768px) {
+  header{
+    position: fixed;
+
+  }
+}
