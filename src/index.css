@@ -115,18 +115,18 @@ main h1{
 .pro{
     background:linear-gradient(135deg, #00f0ff, #7a5cff);
     border: none;
-    padding: 10px 20px;
+    padding: 7px 18px;
     border-radius: 10px;
     font-weight: bold;
 }
 
 .btn a{
   text-decoration: none;
-  font-size: 14px;
+  font-size: 12px;
 }
 
 .cm{
-    padding: 10px 20px;
+    padding: 7px 18px;
     border: none;
     border-radius: 10px;
     background: rgb(255, 255, 255, 0.1);
